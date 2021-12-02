@@ -177,3 +177,24 @@ int swift_sort_core(int* array,int count,int mode){
     }
     return swift_sort_core(array,i,mode)+swift_sort_core(array+i+1,count-i-1,mode)+cmp_count;
 }
+
+int dichonomy_search(int* arr,int count,int target,int mode){
+    int i=0,j=0,m=0;
+    i=0;j=count-1;
+    while(i<=j){
+        m=i+(j-i)/2;
+        if(arr[m]==target){
+            break;
+        }
+        if(cmp(arr[m],target,mode)){
+            j=m-1;
+        }
+        else{
+            i=m+1;
+        }
+    }
+    if(i<=j){
+        return m;
+    }
+    return -1;
+}

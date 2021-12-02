@@ -14,3 +14,4 @@ int swift_sort_core(int* array,int count,int mode);
 int cmp(int a,int b,int mode);
 int exchange(int* a,int* b);
 void arr_cpy(int* source,int* target,int count);
+int dichonomy_search(int* arr,int count,int target,int mode=1);
