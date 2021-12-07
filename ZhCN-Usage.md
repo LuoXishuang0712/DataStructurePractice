@@ -12,7 +12,7 @@ cd <库文件夹>
 
 eg.
 ```bash
-cd queue
+cd queue/
 g++ -o output -g queue_test.cpp
 ```
 

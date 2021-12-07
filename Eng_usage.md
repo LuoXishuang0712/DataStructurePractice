@@ -8,14 +8,16 @@ the source file ended with "_test" is the library example.
 
 to complain it, just use 
 ```bash
+cd <Project folder>
 <compiler> -o output <library>_test.cpp
 ```
 
 eg.
 ```bash
+cd queue/
 g++ -o output -g queue_test.cpp
 ```
 
--g used to enable gdb debuger.
+-g used to enable gdb debuger, you can disable is if you don't need it.
 
 ### before compile, to ensure you has installed the compiler!
